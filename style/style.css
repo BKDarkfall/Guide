@@ -1,0 +1,381 @@
+body {
+  background-color: #000000;
+  background-image: url('../img/battleknight-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  margin-top: 75px;
+}
+
+article {
+  width: 800px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #DCDCDC;
+  border-radius: 15px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  outline: none;
+  color: #97cae6;
+}
+
+a:hover {
+  border-bottom: 1px dashed transparent;
+}
+
+
+/* ------------------ NAV ------------------------*/
+
+
+#menu {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 5px solid #202020;
+    border-bottom: 5px solid #202020;
+    background-color: rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+    z-index: 999999;
+}
+ 
+.w {
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+nav {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 17px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 2px 20px 2px 20px;
+  
+}
+
+nav li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  
+}
+   
+
+
+
+/*------------------ END NAV -------------------*/
+
+
+article div#slideshow * {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* slideshow */
+
+#slideshow {
+  background-color: #F5F5F5;
+  border: 1px solid #FFFFFF;
+  height: 286px;
+  margin: 20px auto 0;
+  position: relative;
+  width: 740px;
+  -moz-box-shadow: 0 0 22px #111;
+  -webkit-box-shadow: 0 0 22px #111;
+  box-shadow: 0 0 22px #111;
+}
+
+#slideshow ul {
+  height: 266px;
+  left: 10px;
+  list-style: none outside none;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  width: 720px;
+}
+
+#slideshow li {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+#slideshow li:first-child {
+  display: block;
+  z-index: 1000;
+}
+
+#slideshow .slideActive {
+  z-index: 1000;
+}
+
+#slideshow canvas {
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+
+#slideshow .arrow {
+  height: 266px;
+  width: 720px;
+  position: absolute;
+  background: url('...img/arrows.png') no-repeat;
+  margin-top: 15px;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+/* slideshow END */
+
+footer {
+  width: 800px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  color: #DCDCDC;
+  border-radius: 15px;
+  background: #20201f no-repeat top center;
+  height: 110px;
+}
+
+#leftside { width: 66%; float: left; }
+#rightside { width: 33%; float: right; }
+#leftcolumn { width: 50%; float: left; }
+#centercolumn { width: 50%; float: right; }
+
+
+/* ------------------ Nav additions ----------------- */
+
+/* Main Dark Menu Unordered List First Level Style */
+        ul.dark_menu {
+            list-style: none;
+            padding: 0;
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        /* Clears all floated List Items */
+        ul.dark_menu:after {
+            content: "";
+            clear: both;
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+            /* First Level List Items Style */
+            ul.dark_menu li {
+                float: left;
+                margin: 0 0 0 10px;
+                position: relative;
+            }
+
+            /* First List Item in First Level Style */
+            ul.dark_menu li:first-child {
+                margin: 0;
+            }
+
+                /* List Items Links Style */
+                ul.dark_menu li a, ul.dark_menu li a:link {
+                    color: #989898;
+                    text-decoration: none;
+                    display: block;
+                    padding: 8px 40px;
+		    font-weight: bold;
+                    
+                    /* Text Shadow */
+                    text-shadow: 0 1px 0 #4b433e;
+                    
+                    /* Gradient Background */
+                    background: #362f2c; /* Old browsers */
+                    background: -moz-linear-gradient(top, #002531 0%, #282321 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#002531), color-stop(100%,#282321)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top, #002531 0%,#282321 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top, #002531 0%,#282321 100%); /* Opera11.10+ */
+                    background: -ms-linear-gradient(top, #002531 0%,#282321 100%); /* IE10+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#362f2c', endColorstr='#282321',GradientType=0 ); /* IE6-9 */
+                    background: linear-gradient(top, #002531 0%,#282321 100%); /* W3C */
+
+                    /* Border Radius */
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+
+                    /* Box Shadows */
+                    -webkit-box-shadow: inset 0 1px 0 #564b46,
+                                       0 1px 1px #181514;
+                    -moz-box-shadow: inset 0 1px 0 #564b46,
+                                     0 1px 1px #181514;
+                    box-shadow: inset 0 1px 0 #564b46,
+                                0 1px 1px #181514;
+
+                    /* Transition Effect */
+                    -webkit-transition: all 1s ease;
+	                -moz-transition: all 1s ease;
+	                -o-transition: all 1s ease;
+	                -ms-transition: all 1s ease;
+	                transition: all 1s ease;
+                }
+
+                    /* List Items Links Hover State Style */
+                    ul.dark_menu li a:hover {
+                        color: #ffffff;
+
+                        /* Text Shadow */
+                        text-shadow: 0 1px 1px #000;
+
+                        /* Gradient Background */
+                        background: #282321; /* Old browsers */
+                        background: -moz-linear-gradient(top, #282321 0%, #362f2c 99%, #362f2c 100%); /* FF3.6+ */
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282321), color-stop(99%,#362f2c), color-stop(100%,#362f2c)); /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(top, #282321 0%,#362f2c 99%,#362f2c 100%); /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(top, #282321 0%,#362f2c 99%,#362f2c 100%); /* Opera11.10+ */
+                        background: -ms-linear-gradient(top, #282321 0%,#362f2c 99%,#362f2c 100%); /* IE10+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282321', endColorstr='#362f2c',GradientType=0 ); /* IE6-9 */
+                        background: linear-gradient(top, #282321 0%,#362f2c 99%,#362f2c 100%); /* W3C */
+
+                        /* Transition Effect */
+                        -webkit-transition: all 1s ease;
+	                    -moz-transition: all 1s ease;
+	                    -o-transition: all 1s ease;
+	                    -ms-transition: all 1s ease;
+	                    transition: all 1s ease;
+                    }
+
+                    /* List Items Links Active and Selected State Style */
+                    ul.dark_menu li a.selected, ul.dark_menu li a:active {
+                        color: #73635e;
+                        background: #282321;
+
+                        /* Text Shadow */
+                        text-shadow: 0 1px 1px #000;
+
+                        /* Box Shadows */
+                        -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.6),
+                                           0 1px 0 #5e524f;
+                        -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.6),
+                                         0 1px 0 #5e524f;
+                        box-shadow: inset 0 2px 4px rgba(0,0,0,0.6),
+                                    0 1px 0 #5e524f;
+                        
+                        /* Transition Effect */
+                        -webkit-transition: all 1s ease;
+	                    -moz-transition: all 1s ease;
+	                    -o-transition: all 1s ease;
+	                    -ms-transition: all 1s ease;
+	                    transition: all 1s ease;
+                    }
+
+                    /* Sub Menu Unordered List Second Level Style */
+                    ul.dark_menu li ul {
+                        display: none;
+                    }
+
+                    /* Before Second Level Unordered List Style */
+                    ul.dark_menu li ul:before {
+                        content: " ";
+                        position: absolute;
+                        display: block;
+                        z-index: 1500;
+                        left: 0;
+                        top: -10px;
+                        height: 10px;
+                        width: 100%;
+                    }
+
+                    /* Sub Menu Unordered List Second Level Style
+                        When Parent List Item is Hovered */
+                    ul.dark_menu li:hover ul {
+                        position: absolute;
+                        display: block;
+                        z-index: 1000;
+                        left: 0;
+                        top: 44px;
+                        padding: 5px 0;
+                        list-style: none;
+                        background: #282321;
+
+                        /* Box Shadows */
+                        -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.6),
+                                           0 1px 0 #5e524f;
+                        -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.6),
+                                         0 1px 0 #5e524f;
+                        box-shadow: inset 0 2px 4px rgba(0,0,0,0.6),
+                                    0 1px 0 #5e524f;
+
+                        /* Border Radius */
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        border-radius: 4px;
+                    }
+
+                        /* Second Level Menu List Items Style */
+                        ul.dark_menu li ul li {
+                            float: none;
+                            margin: 0 10px;                            
+                            border-bottom: 1px solid #191614;
+                            border-top: 1px solid #3a3230;
+                        }
+
+                        /* First List Item in Second Level Menu Style */
+                        ul.dark_menu li ul li:first-child {
+                            margin: 0 10px;
+                            border-top: 0 none;
+                        }
+
+                        /* Last List Item in Second Level Menu Style */
+                        ul.dark_menu li ul li:last-child {
+                            border-bottom: 0 none;
+                        }
+
+                        /* Second Level List Items Links Style */
+                        ul.dark_menu li ul li a, ul.dark_menu li ul li a:link {
+                            color: #73635e;
+                            display: block;
+                            background: transparent none;
+                            padding: 10px 20px 10px 5px;
+                            white-space: nowrap;
+
+                            /* Text Shadow */
+                            text-shadow: 0 1px 2px #000;
+                                                        
+                            /* Box Shadows */
+                            -webkit-box-shadow: 0 0 0 rgba(0,0,0,0);
+                            -moz-box-shadow: 0 0 0 rgba(0,0,0,0);
+                            box-shadow: 0 0 0 rgba(0,0,0,0);
+
+                            /* Border Radius */
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            border-radius: 0px;
+                        }
+
+                        /* Second Level List Items Links Hover State Style */
+                        ul.dark_menu li ul li a:hover {
+                            text-decoration: underline;
+                            background: #2a2523;
+                        }
